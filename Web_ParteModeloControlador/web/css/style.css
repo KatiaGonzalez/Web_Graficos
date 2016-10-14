@@ -1,0 +1,687 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 04-ene-2016, 17:55:38
+    Author     : van
+*/
+.buttSli{
+    width: 77px;
+    height: 30px;
+    border: none;
+}
+@font-face {
+    font-family: fuenteDef;
+    src: url(../fonts/Lato-Regular.ttf);
+}
+#insert_form{
+    display: none;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: fuenteDef;
+
+}
+body{
+    background-color: #e8e8e8;
+}
+#loginBody{
+    background-image: url("../images/loginBackground.jpg");
+}
+#loginOrange{
+   background: #ffab00;
+   width: 650px;
+   height: 5px;
+}
+#loginBox{
+    margin-top: 5%;
+   margin-left: 28%;
+}
+#loginBoxMain{
+   
+   width: 650px;
+   height: 400px;
+/*    background-image: url("../blackTexture2.jpg");*/
+   background-color: #333333;
+   opacity: .8;
+   
+}
+#logInTitle{
+    text-align: center;
+    color: #828282;
+    font-weight: bold;
+    font-size: xx-large;
+}
+#loginButton{
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px;
+  width: 571px;
+  height: 65px;
+  background: #828282;
+  border: solid #e8e8e8 1px;
+  text-decoration: none;
+  opacity: .5;
+}
+#passBox{
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px;
+  width: 550px;
+  background: #828282;
+  border: solid #e8e8e8 1px;
+  text-decoration: none;
+  opacity: .5;
+}
+#userBox{
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px;
+  width: 550px;
+  background: #828282;
+  border: solid #e8e8e8 1px;
+  text-decoration: none;
+  opacity: .5;
+}
+
+#loginButton:hover {
+  background: #c7c7c7;
+  text-decoration: none;
+}
+table.loginCell{
+    border-spacing: 40px;
+}
+#leftMenu{
+    font: serif;
+    background-color: #333333;
+    position: fixed;
+    height: 100%;
+    width: 300px;
+}
+div.user{
+    height: 75px;
+    padding-top: 10px;
+    padding-left: 40px;
+    background: #202020;
+    border-bottom: 2px solid #3c3c3c;
+    
+}
+#welcomUser{
+    margin-left: 15px;
+}
+#welcom{
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+    opacity: .6;
+}
+#username{
+    color: white;
+    font-size: 15px;
+    opacity: .6;
+}
+#opcionList{
+    margin-top: 50px;
+    list-style: none;
+    display: block;
+}
+li.opcion{
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid #999999;
+    
+}
+#linkhome{
+    border-top: 1px solid #999999;
+}
+div.barra{
+    position: absolute;
+    width: 0px;
+    height: 50px;
+    background-color:  #e8e8e8;
+    opacity: .8;
+    -moz-transition: .2s;
+    -webkit-transition: .2s;
+    
+}
+div.menu{
+    padding: 15px;
+    
+}
+a.menu{
+    position: relative;
+    padding-left: 30px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    opacity: .6;
+}
+li.opcion:hover div.barra{
+    width: 300px;
+}
+#bottomOr{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: #ffab00;
+}
+#content{
+    padding-top: 10px;
+    padding-left: 37px;
+    margin-left: 300px;
+}
+#hold{
+    background-color: #e8e8e8;
+    border-left: #ffab00 solid 5px;
+}
+#hold:hover div.barra{
+    width: 0px;
+}
+#holdLi{
+    color: #000000;
+    opacity: 0px;
+}
+
+
+#main{
+    background-color: #e8e8e8;
+    
+}
+#menuTop{
+    background: #ffffff;
+    height: 75px;
+    padding-left: 40px;
+    padding-top: 10px;
+    color: #000000;
+    border-bottom: 1px solid  #dddddd;
+}
+#titledash{
+    margin-top: 10px;
+    margin-left: 300px;
+    color: #3c3c3c;
+    -moz-animation-name: ATitleDash;
+    -moz-animation-iteration-count: 1;
+    -moz-animation-timing-function: ease-in;
+    -moz-animation-duration: 0.7s;
+
+    -webkit-animation-name: ATitleDash;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-in;
+    -webkit-animation-duration: 0.7s;
+
+    animation-name: ATitleDash;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 0.7s;
+}
+@-moz-keyframes ATitleDash {
+    0% {
+        color: #f9f9f9;
+        text-shadow: 0 0 40px #dddddd;
+    }
+    100% {
+        color: #000000;
+    }
+}
+@-webkit-keyframes ATitleDash {
+    0% {
+        color: #f9f9f9;
+        text-shadow: 0 0 40px #dddddd
+    }
+    100% {
+        color: #000000;
+    }
+}
+@keyframes ATitleDash {
+    0% {
+        color: #f9f9f9;
+        text-shadow: 0 0 40px #dddddd
+    }
+    100% {
+        color: #000000;
+    }
+}
+#tableChart{
+    padding: 0px;
+}
+td.celltable{
+    padding: 5px;
+    border: 1px solid #dddddd;
+    background: white;
+}
+#areaChart{
+   width: 230px;
+   height: 300px;
+   margin-left: 25px;
+}
+#botonesSpider, #botonesPie{
+   width: 994px;
+   background-color: white;
+   padding: 5px;
+   border: 1px solid #dddddd;
+}
+#containerBar{
+   width: 994px;
+   height: 330px;
+}
+#containerArea{
+   width: 994px;
+   height: 530px;
+}
+#containerDonut{
+   font-size: smaller;
+   width: 489px;
+   height: 300px;
+}
+#containerSpider{
+   font-size: smaller;
+   width: 489px;
+   height: 300px;
+}
+label{
+    font-size: 11px;
+    font-weight: bold;
+    text-align: center;
+     alignment-adjust: baseline;
+    
+}
+
+.video-js {
+  font-size: 10px;
+  color: #fff;
+}
+
+.vjs-default-skin .vjs-big-play-button {
+  font-size: 3em;
+  line-height: 1.5em;
+  height: 1.5em;
+  width: 3em;
+  border: 0.06666em solid #fff;
+  border-radius: 0.3em;
+  left: 50%;
+  top: 50%;
+  margin-left: -1.5em;
+  margin-top: -0.75em;
+}
+
+#divVideo{
+    background-color: #ffffff;
+    border-bottom: 1px solid  #dddddd;
+    padding-top: 4px;
+    width: 1010px;
+}
+.ttw-music-player{
+    float: right;
+}
+#gestiondiv{
+    background-color: #ffffff;
+    border: 1px solid  #dddddd;
+    width: 1000px;
+    height: 525px;
+}
+#BotonPane{
+    
+    width: 85px;
+    height: 521px;
+    border: #eacb00 solid 2px;
+    float: left;
+}
+#listadoDiv{
+    height: 525px;
+    width: 545px;
+    float: left;
+}
+#containerPie{
+    height: 525px;
+    width: 363px;
+    float: left;
+    border-left: solid 2px #c7c7c7;
+}
+#correoDiv{
+    height: 525px;
+    width: 800px;
+    float: left;
+    
+    /*display: inline;*/
+}
+.buttonGest{
+    background-image: url('../images/cell_bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 85px;//171px;
+    height: 173px;
+    border-bottom: #eacb00 solid 2px;
+    cursor: pointer;
+}
+#OpLista{
+    padding-top: 40px;
+    padding-left: 60px;
+    width: 89%;
+    height: 485px;
+    overflow: auto;
+    overflow-x: hidden;
+}
+#OpListaMsg{
+    padding-top: 40px;
+    padding-left: 60px;
+    width: 90%;
+    height: 450px;
+    overflow: auto;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar
+{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 12px;  /* for vertical scrollbars */
+}
+
+::-webkit-scrollbar-track
+{
+  background: rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar-thumb
+{
+  background: rgba(0, 0, 0, 0.5);
+}
+#OpAdd{
+    padding-top: 40px;
+    padding-left: 60px;
+    width: 100%;
+    height: 485px;
+    display: none;
+}
+#OpDel{
+    padding-top: 40px;
+    padding-left: 60px;
+    width: 100%;
+    height: 485px;
+    display: none;
+}
+#OpAdd, #OpDel, #OpLista, #OpListaMsg, #botonesPie, #botonesSpider, #botonesArea{
+    -moz-animation-name: OpEfx;
+    -moz-animation-iteration-count: 1;
+    -moz-animation-timing-function: ease-in;
+    -moz-animation-duration: 0.7s;
+
+    -webkit-animation-name: OpEfx;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-in;
+    -webkit-animation-duration: 0.7s;
+
+    animation-name: OpEfx;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 0.7s;
+}
+@-moz-keyframes OpEfx {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@-webkit-keyframes OpEfx {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes OpEfx {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+#BtLista{
+    background-color: #ffcd00;
+}
+#BtAdd{
+    background-color: #ffab00;
+}
+#BtDel{
+    background-color: #ffab00;
+    border-bottom: none;
+}
+.iconGest{
+    width: 60px;
+    height: 60px;
+    margin-left: 13px;
+    margin-top: 57px;
+}
+.cabeceras{
+    height: 40px;
+    border: solid 2px #515151;
+    background-color: #333333;
+    color: #f9f9f9;
+    font-weight: bold;
+    font-size: medium;
+}
+.cellGest{
+    width: 200px;
+    text-align: left;
+    padding-left: 15px;
+}
+.listUsr{
+    border-bottom: black 1px solid;
+    padding: 10px;
+}
+.listadoQTitle{
+    margin-bottom: 25px;
+}
+table.AddCell{
+    border: 3px solid #828282;
+    padding: 20px;
+    border-collapse: separate; /* allow spacing between cell borders */
+    border-spacing: 0 25px;
+}
+td.AddCell{
+    width: 130px;
+    font-weight: bold;
+    font-size: 16px;
+}
+#AddButton{
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 18px;
+  padding: 5px;
+  width: 250px;
+  height: 35px;
+  background: #333333;
+  border: solid #202020 2px;
+  text-decoration: none;
+  cursor: pointer;
+  margin-left: 17%;
+}
+#DeleteButton{
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 18px;
+  padding: 5px;
+  width: 250px;
+  height: 35px;
+  background: #333333;
+  border: solid #202020 2px;
+  text-decoration: none;
+  cursor: pointer;
+  margin-left: 17%;
+}
+#AddButton:hover{
+  background: #515151;
+  text-shadow: 5;
+  
+}
+#DeleteButton:hover{
+  background: #515151;
+  text-shadow: 5;
+  
+}
+input.AddCell, select.AddCell{
+  font-family: Arial;
+  font-size: 12px;
+  padding: 2px;
+  width: 250px;
+  height: 20px;
+  border: solid #333333 2px;
+  text-decoration: none;
+  color: #999999;
+}
+input.AddCell:focus{
+    font-size: 13px;
+    color: black;
+}
+select.AddCell{
+    font-weight: bold;
+    width: 258px;
+    font-size: 15px;
+    color: #f9f9f9;
+    background-color: #333333;
+    height: 33px;
+    padding: 6px;
+}
+#userSendBox, #asuntoSendBox , #msgSendBox{
+    margin-left: 50px;
+    width: 300px;
+}
+#asuntoSendBox{
+    width: 293px;
+    column-width: 293px;
+}
+#idMsg{
+    width: 100px;
+    column-width: 100px;
+}
+#idMsg{
+    column-width: 50px;
+}
+#textMsg{
+    column-width: 400px;
+}
+#asuntoMsg{
+    column-width: 200px;
+}
+#emisorMsg{
+    column-width: 150px;
+}
+#listadoDivMsg {
+    height: 525px;
+    width: 870px;
+    float: left;
+}
+#tableUsr{
+    margin-bottom: 40px;
+}
+#tableMsg{
+    margin-bottom: 40px;
+}
+button.autocompare{
+    background-color: white;
+    background-position: center;
+    background-image: url("../images/bOn.bmp");
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: 0 white;
+    outline: none;
+    width: 65px;
+    height: 27px;
+    text-decoration: none;
+    border-image: none 0;
+    border-image-width: 0;
+    border-image-outset: 0;
+    padding: 0;
+    margin: 0;
+    -moz-border:0 none;   
+    -moz-background-size: contain;
+    -moz-border-radius: 0;
+    -moz-background-clip: border-box;
+    -moz-appearance: icon;
+    border-image-slice: 0;
+    border-image-width: 0;
+    
+    
+}
+
+
+
+button.autocompare::-moz-focus-inner{
+    border: 0;
+    padding: 0;
+    margin: 0px;
+    border-image: none;
+    border-image-width: 0;
+    border-image-outset: 0;
+}
+button.autocompare:-moz-focus-inner{
+    border: 0;
+    padding: 0;
+    margin: 0px;
+    border-image: none;
+    border-image-width: 0px;
+    border-image-outset: 0px;
+    box-shadow: none;
+}
+button.autocompare:focus{
+    border: 0;
+    padding: 0;
+    margin: 0px;
+    border-image: none;
+    border-image-width: 0px;
+    border-image-outset: 0px;
+    box-shadow: none;
+}
+button.autocompare:hover{
+    border: 0;
+    border-style: hidden;
+    padding: 0;
+    margin: 0px;
+    border-image: none;
+    border-image-width: 0px;
+    border-image-outset: 0px;
+    box-shadow: none;
+}
+button.autocompare:after{
+    border: 0;
+    border-style: hidden;
+    padding: 0;
+    margin: 0px;
+    border-image: none;
+    border-image-width: 0px;
+    border-image-outset: 0px;
+    box-shadow: none;
+}
+button.autocompare:before{
+    border: 0;
+    border-style: hidden;
+    padding: 0;
+    margin: 0px;
+    border-image: none;
+    border-image-width: 0px;
+    border-image-outset: 0px;
+    box-shadow: none;
+}
+button.autocompare:disabled{
+   border: 0;
+    border-style: hidden;
+    padding: 0;
+    margin: 0px;
+    border-image: none;
+    border-image-width: 0px;
+    border-image-outset: 0px;
+    box-shadow: none;
+}
+

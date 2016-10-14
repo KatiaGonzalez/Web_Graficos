@@ -1,0 +1,305 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 04-ene-2016, 17:55:38
+    Author     : van
+*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: #e8e8e8;
+}
+#loginBody{
+    background-image: url("../loginBackground.jpg");
+}
+#loginOrange{
+   background: #ffab00;
+   width: 650px;
+   height: 5px;
+}
+#loginBox{
+    margin-top: 5%;
+   margin-left: 28%;
+}
+#loginBoxMain{
+   
+   width: 650px;
+   height: 400px;
+/*    background-image: url("../blackTexture2.jpg");*/
+   background-color: #333333;
+   opacity: .8;
+   
+}
+#logInTitle{
+    text-align: center;
+    color: #828282;
+    font-weight: bold;
+    font-size: xx-large;
+}
+#loginButton{
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px;
+  width: 571px;
+  height: 65px;
+  background: #828282;
+  border: solid #e8e8e8 1px;
+  text-decoration: none;
+  opacity: .5;
+}
+#passBox{
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px;
+  width: 550px;
+  background: #828282;
+  border: solid #e8e8e8 1px;
+  text-decoration: none;
+  opacity: .5;
+}
+#userBox{
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px;
+  width: 550px;
+  background: #828282;
+  border: solid #e8e8e8 1px;
+  text-decoration: none;
+  opacity: .5;
+}
+
+#loginButton:hover {
+  background: #c7c7c7;
+  text-decoration: none;
+}
+table.loginCell{
+    border-spacing: 40px;
+}
+#leftMenu{
+    font: serif;
+    background-color: #333333;
+    position: fixed;
+    height: 100%;
+    width: 300px;
+}
+div.user{
+    height: 75px;
+    padding-top: 10px;
+    padding-left: 40px;
+    background: #202020;
+    border-bottom: 2px solid #3c3c3c;
+    
+}
+#welcomUser{
+    margin-left: 15px;
+}
+#welcom{
+    color: white;
+    font-weight: bold;
+    font-size: medium;
+    opacity: .6;
+}
+#username{
+    color: white;
+    font-size: small;
+    opacity: .6;
+}
+#opcionList{
+    margin-top: 50px;
+    list-style: none;
+    display: block;
+}
+li.opcion{
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid #999999;
+    
+}
+#linkhome{
+    border-top: 1px solid #999999;
+}
+div.barra{
+    position: absolute;
+    width: 0px;
+    height: 50px;
+    background-color:  #e8e8e8;
+    opacity: .8;
+    -moz-transition: .2s;
+    -webkit-transition: .2s;
+    
+}
+div.menu{
+    padding: 15px;
+    
+}
+a.menu{
+    position: relative;
+    padding-left: 30px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: medium;
+    opacity: .6;
+}
+li.opcion:hover div.barra{
+    width: 300px;
+}
+#bottomOr{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: #ffab00;
+}
+#content{
+    padding-top: 10px;
+    padding-left: 37px;
+    margin-left: 300px;
+}
+#hold{
+    background-color: #e8e8e8;
+    border-left: #ffab00 solid 5px;
+}
+#hold:hover div.barra{
+    width: 0px;
+}
+#holdLi{
+    color: #000000;
+    opacity: 0px;
+}
+
+
+#main{
+    background-color: #e8e8e8;
+    
+}
+#menuTop{
+    background: #ffffff;
+    height: 75px;
+    padding-left: 40px;
+    padding-top: 10px;
+    color: #000000;
+    border-bottom: 1px solid  #dddddd;
+}
+#titledash{
+    margin-top: 10px;
+    margin-left: 300px;
+    color: #3c3c3c;
+    -moz-animation-name: ATitleDash;
+    -moz-animation-iteration-count: 1;
+    -moz-animation-timing-function: ease-in;
+    -moz-animation-duration: 0.7s;
+
+    -webkit-animation-name: ATitleDash;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-in;
+    -webkit-animation-duration: 0.7s;
+
+    animation-name: ATitleDash;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 0.7s;
+}
+@-moz-keyframes ATitleDash {
+    0% {
+        color: #f9f9f9;
+        text-shadow: 0 0 40px #dddddd;
+    }
+    100% {
+        color: #000000;
+    }
+}
+@-webkit-keyframes ATitleDash {
+    0% {
+        color: #f9f9f9;
+        text-shadow: 0 0 40px #dddddd
+    }
+    100% {
+        color: #000000;
+    }
+}
+@keyframes ATitleDash {
+    0% {
+        color: #f9f9f9;
+        text-shadow: 0 0 40px #dddddd
+    }
+    100% {
+        color: #000000;
+    }
+}
+#tableChart{
+    padding: 0px;
+}
+td.celltable{
+    padding: 5px;
+    border: 1px solid #dddddd;
+    background: white;
+}
+#areaChart{
+   width: 535px;
+   height: 300px;
+   margin-left: 25px;
+}
+#barChart{
+   width: 420px;
+   height: 330px;
+}
+#radialChart{
+   width: 466px;
+   height: 300px;
+}
+#leftChartMenu{
+   font-size: smaller;
+   width: 250px;
+   height: 300px;
+}
+#rightChartMenu{
+   font-size: smaller;
+   width: 250px;
+   height: 300px;
+}
+
+.video-js {
+  font-size: 10px;
+  color: #fff;
+}
+
+.vjs-default-skin .vjs-big-play-button {
+  font-size: 3em;
+  line-height: 1.5em;
+  height: 1.5em;
+  width: 3em;
+  border: 0.06666em solid #fff;
+  border-radius: 0.3em;
+  left: 50%;
+  top: 50%;
+  margin-left: -1.5em;
+  margin-top: -0.75em;
+}
+
+#divVideo{
+    background-color: #ffffff;
+    border-bottom: 1px solid  #dddddd;
+    padding-top: 4px;
+    width: 1010px;
+}
+.ttw-music-player{
+    float: right;
+}
+#gestiondiv{
+    background-color: #ffffff;
+    border: 1px solid  #dddddd;
+    padding-top: 4px;
+    width: 1017px;
+    height: 525px;
+}
